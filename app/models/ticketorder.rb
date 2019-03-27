@@ -1,0 +1,2 @@
+class Ticketorder < ApplicationRecord
+end
