@@ -1,11 +1,12 @@
 class User < ApplicationRecord
+	has_many :Ticketorder
 	def most_expensive_ticket_bought
-		tickets = ticketorder.find_by user
-		most = tickets.order(tickettype.price).last
+		ticketuser = user.Ticketorder
+		most = ticketuser.order(Tickettype.price: :desc).limit(1)
 		return most
 	end
 	def most_expensive_ticket_bought_between(start:datetime, end:datetime)
-		tickets = ticketorder.find_by user
+		ticketuser = user.Ticketorder
 		#tickets_date = tickets.where
 	
 	end
