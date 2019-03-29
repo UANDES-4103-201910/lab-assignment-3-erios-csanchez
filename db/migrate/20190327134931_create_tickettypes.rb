@@ -1,4 +1,5 @@
 class CreateTickettypes < ActiveRecord::Migration[5.2]
+
   def change
     create_table :tickettypes do |t|
       t.references :event

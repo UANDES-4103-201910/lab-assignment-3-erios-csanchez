@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#User.create(name: 'pedro',lastname: 'gonzales',email: 'hola@gmail.com',phone: 124566,password: 'telescopio',address: 'calle 4')
+#u1 = User.create(name: 'pedro',lastname: 'gonzales',email: 'hola@gmail.com',phone: 124566,password: 'telescopio',address: 'calle 4')
 #User.create(name: 'ernesto',lastname: 'rios',email: 'eerios@gmail.com',phone: 3452345,password: 'autos',address: 'calle 20')
 #User.create(name: 'catalina',lastname: 'sanchez',email: 'ccss@gmail.com',phone: 6789456,password: 'cama',address: 'san carlos 23')
 #User.create(name: 'juan',lastname: 'cortes',email: 'juan@gmail.com',phone: 67845690,password: 'moto',address: 'vitacura 23')
@@ -14,4 +14,4 @@
 
 #lugar1 = Eventplace.create(name: 'movistar arena', adress: 'parque ohiggins', capacity: 12000)
 
-#Event.create(name: 'ricardo arjona', descriptiom: 'recital', startdate: 04/20/19)
+#concierto = Event.create(name: 'ricardo arjona', descriptiom: 'recital', startdate: 04/20/19)
