@@ -7,6 +7,7 @@ class Event < ApplicationRecord
 		return most_repeated.event
 	end
 	def highest_revenue
+		return Tickettype.select(event).group(event).order("sum(price)": :desc).limit(1)
 		
 	end
 end
